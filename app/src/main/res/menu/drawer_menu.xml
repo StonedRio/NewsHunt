@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showin="navigation_view">
+
+    <item android:title="Settings"
+        android:fontFamily="@font/ebrima_bold">
+        <menu>
+
+            <item android:id="@+id/news_selection"
+                android:icon="@drawable/ic_news_selection"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="News Selections"/>
+
+            <item android:id="@+id/opinions"
+                android:icon="@drawable/ic_opinions"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="Opinions"/>
+
+            <item android:id="@+id/category"
+                android:icon="@drawable/ic_category"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="Category"/>
+
+            <item android:id="@+id/language"
+                android:icon="@drawable/ic_language"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="Language"/>
+        </menu>
+    </item>
+
+    <item android:title="General"
+        android:fontFamily="@font/ebrima_bold">
+
+        <menu>
+            <item android:id="@+id/push_notification"
+                android:icon="@drawable/ic_push_notification"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="Push Notification"/>
+
+            <item android:id="@+id/font_size"
+                android:icon="@drawable/ic_font_size"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="Font Size"/>
+
+            <item android:id="@+id/how_to"
+                android:icon="@drawable/ic_how_to"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="How To"/>
+
+            <item android:id="@+id/about_us"
+                android:icon="@drawable/ic_about_us"
+                android:fontFamily="@font/ebrima_regular"
+                android:title="About Us"/>
+
+        </menu>
+    </item>
+
+</menu>

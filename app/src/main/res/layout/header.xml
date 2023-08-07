@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_120sdp"
+    android:background="@color/primary"
     android:paddingTop="@dimen/_10sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.8"
@@ -18,9 +20,12 @@
 
         <ImageView
             android:id="@+id/profile_pic"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_50sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp"
             android:background="@drawable/round_background"
+            android:src="@drawable/ic_profile_pic"
+            android:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -31,8 +36,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_5sdp"
             android:layout_marginTop="8dp"
-            android:text="Imad Khan"
+            android:text="Guest"
             android:textSize="@dimen/_18ssp"
+            android:textColor="@color/white"
             android:fontFamily="@font/ebrima_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
@@ -44,8 +50,9 @@
             android:id="@+id/email_address"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="imadkhanzsw@gmail.com"
+            android:text="abc123@xyz.com"
             android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
             android:fontFamily="@font/ebrima_regular"
             app:layout_constraintStart_toStartOf="@+id/name"
             app:layout_constraintTop_toBottomOf="@+id/name"

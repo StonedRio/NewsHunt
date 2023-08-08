@@ -85,31 +85,31 @@ public class HowToFragment extends Fragment {
 
         ArrayList<HowTo> list=new ArrayList<>();
 
-        HowTo howTo1=new HowTo("Best place to find\n" +
-                "the news you need . . .",R.drawable.how_to_image1,"");
+        HowTo howTo1=new HowTo("<b>Best place to find</b><br>" +
+                "<b>the news you need . . .</b>",R.drawable.how_to_image1,"");
         list.add(howTo1);
 
-        HowTo howTo2=new HowTo("You can check news analysis by\n" +
-                "pressing icons bellow each news",R.drawable.how_to_image2,"And also check its original source\n" +
-                "by clicking View Source on every\n" +
+        HowTo howTo2=new HowTo("You can check news analysis by<br>" +
+                "pressing icons bellow each news",R.drawable.how_to_image2,"And also check its original source<br>" +
+                "by clicking <font color='#45C9F4'>View Source</font> on every<br>" +
                 "news page . . .");
         list.add(howTo2);
 
-        HowTo howTo3=new HowTo("Language Selection as easy as\n" +
-                "clicking on language button on\n" +
-                "home screen and selecting your\n" +
+        HowTo howTo3=new HowTo("<font color='#45C9F4'>Language Selection</font> as easy as<br>" +
+                "clicking on language button on<br>" +
+                "home screen and selecting your<br>" +
                 "desired language ",R.drawable.how_to_image3,"");
         list.add(howTo3);
 
-        HowTo howTo4=new HowTo("Customizing News Sources\n" +
-                "Click menu and click on News\n" +
-                "for current sources and for new\n" +
+        HowTo howTo4=new HowTo("Customizing <font color='#45C9F4'>News Sources</font><br>" +
+                "Click menu and click on <font color='#45C9F4'>News</font><br>" +
+                "for current sources and for new<br>" +
                 "source go to follow tab . . .",R.drawable.how_to_image4,"");
         list.add(howTo4);
 
-        HowTo howTo5=new HowTo("Customizing News Categories\n" +
-                "Click menu and click on Category\n" +
-                "for current categories and for new\n" +
+        HowTo howTo5=new HowTo("Customizing <font color='#45C9F4'>News Categories</font><br>" +
+                "Click menu and click on <font color='#45C9F4'>Category</font><br>" +
+                "for current categories and for new<br>" +
                 "categories go to follow tab . . .",R.drawable.how_to_image5,"");
         list.add(howTo5);
 

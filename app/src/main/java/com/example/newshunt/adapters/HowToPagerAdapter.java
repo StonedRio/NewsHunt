@@ -2,6 +2,7 @@ package com.example.newshunt.adapters;
 
 import android.content.Context;
 import android.media.Image;
+import android.text.Spanned;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.text.HtmlCompat;
 import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.newshunt.R;
@@ -46,9 +48,13 @@ public class HowToPagerAdapter extends PagerAdapter {
         ImageView imageView = view.findViewById(R.id.image_view);
         TextView descriptionTextView = view.findViewById(R.id.description_textview);
 
-        titleTextView.setText(howTo.getTitle());
+        Spanned hmtTitle = HtmlCompat.fromHtml(howTo.getTitle(),HtmlCompat.FROM_HTML_MODE_COMPACT);
+        titleTextView.setText(hmtTitle);
+
         imageView.setImageResource(howTo.getImageResourceId());
-        descriptionTextView.setText(howTo.getDescription());
+
+        Spanned htmDescription=HtmlCompat.fromHtml(howTo.getDescription(),HtmlCompat.FROM_HTML_MODE_COMPACT);
+        descriptionTextView.setText(htmDescription);
 
         container.addView(view);
 

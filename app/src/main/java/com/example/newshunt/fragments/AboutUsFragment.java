@@ -26,14 +26,13 @@ public class AboutUsFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_about_us, container, false);
 
         arrowLeft=view.findViewById(R.id.arrow_left_icon);
-     /*   arrowLeft.setOnClickListener(new View.OnClickListener() {
+        arrowLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) requireActivity();
                 mainActivity.ReplaceFragment(homeFragment);
             }
         });
-*/
         return view;
     }
 }
